@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>wolchon HUNMINDLE</title>
+    </head>
+    <body>
+
+        <h1>월촌중학교 훈민들</h1>
+        <h2>훈민들은, 받침이 있는 2글자 단어를 맞히는 게임입니다.</h2>
+        <p>2글자 단어의 각 글자는 전부 받침이 있습니다. 이 게임에서는 교과서에서 배운 <strong>'풀어쓰기'</strong>를 사용합니다. 예를 들어, '김밥'은 'ㄱㅣㅁㅂㅏㅂ'으로 입력합니다.</p>
+        <p>자음과 모음을 정확히 맞혔을 경우 <strong>'초록색'</strong>으로 표시됩니다.</p>
+        <p>자음을 정확히 맞히지 못했지만 조음 위치가 일치할 경우, 해당 자음은 <strong>'노란색'</strong>으로 표시됩니다.</p>
+        <p>모음을 정확히 맞히지 못했지만 정답과 '기본자/초출자/재출자'라는 공통점이 있다면, 해당 모음은 <strong>'노란색'</strong>으로 표시됩니다.</p>
+        
+        <style>
+            input {
+                width: 50px;
+                height: 50px;
+                font-size: 40px;
+                text-align: center;
+            }
+        </style>
+
+    
+
+    <input class="input">
+    <input class="input">
+    <input class="input">
+    <input class="input">
+    <input class="input">
+    <input class="input">
+
+    <button>제출!</button>
+
+    <script>
+        var answer = 'ㄱㅣㅁㅂㅏㅂ';
+
+        var 아음 = 'ㄱㅋㅇ'
+        var 설음 = 'ㄴㄷㅌㄹ'
+        var 순음 = 'ㅁㅂㅍ'
+        var 치음 = 'ㅅㅈㅊ'
+        var 후음 = 'ㅎ'
+        var 기본자 = 'ㅡㅣ'
+        var 초출자 = 'ㅏㅓㅗㅜ'
+        var 재출자 = 'ㅑㅕㅛㅠ'
+    
+        document.querySelector('button').addEventListener('click', function(){
+            
+            
+            
+            var input = document.querySelectorAll('.input');
+            
+            //1번째 문자 검사
+            if (input[0].value == answer[0]){
+                input[0].style.background = 'green';
+            } else if (아음.includes(input[0].value)){
+                input[0].style.background = 'yellow';
+            } else {
+                input[0].style.background = 'grey'; 
+            }
+
+            //2번째 문자 검사
+            if (input[1].value == answer[1]){
+                input[1].style.background = 'green';
+            } else if (기본자.includes(input[1].value)){
+                input[1].style.background = 'yellow';
+            } else {
+                input[1].style.background = 'grey'; 
+            }
+
+            //3번째 문자 검사
+            if (input[2].value == answer[2]){
+                input[2].style.background = 'green';
+            } else if (순음.includes(input[2].value)){
+                input[2].style.background = 'yellow';
+            } else {
+                input[2].style.background = 'grey'; 
+            }   
+            
+            //4번째 문자 검사
+            if (input[3].value == answer[3]){
+                input[3].style.background = 'green';
+            } else if (순음.includes(input[3].value)){
+                input[3].style.background = 'yellow';
+            } else {
+                input[3].style.background = 'grey'; 
+            }
+
+            //5번째 문자 검사
+            if (input[4].value == answer[4]){
+                input[4].style.background = 'green';
+            } else if (초출자.includes(input[4].value)){
+                input[4].style.background = 'yellow';
+            } else {
+                input[4].style.background = 'grey'; 
+            }   
+            
+            //6번째 문자 검사
+            if (input[5].value == answer[5]){
+                input[5].style.background = 'green';
+            } else if (순음.includes(input[5].value)){
+                input[5].style.background = 'yellow';
+            } else {
+                input[5].style.background = 'grey'; 
+            }
+
+        })
+        
+
+
+
+    </script>
+
+    </body>
+</html>
