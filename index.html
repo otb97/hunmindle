@@ -10,11 +10,20 @@
     </head>
     <body>
         <p><span style="border-radius: 5em; padding: 0.6em 1em; background: #F9F9F9; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);  margin-left: 5px;">월촌중학교 훈민들</span></p>
+        <hr>
         <h2>훈민들은, 받침이 있는 2글자 단어를 맞히는 게임입니다.</h2>
-        <p>2글자 단어의 각 글자는 전부 받침이 있습니다. 이 게임에서는 교과서에서 배운 <strong>'풀어쓰기'</strong>를 사용합니다. 예를 들어, '분식'은 'ㅂㅜㄴㅅㅣㄱ'으로 입력합니다.</p>
-        <p>자음과 모음을 정확히 맞혔을 경우 <strong>'초록색'</strong>으로 표시됩니다.</p>
-        <p>자음을 정확히 맞히지 못했지만 조음 위치가 일치할 경우, 해당 자음은 <strong>'노란색'</strong>으로 표시됩니다.</p>
-        <p>모음을 정확히 맞히지 못했지만 정답과 '기본자/초출자/재출자'라는 공통점이 있다면, 해당 모음은 <strong>'노란색'</strong>으로 표시됩니다.</p>
+        <hr>
+        <p>2글자 단어의 각 글자는 전부 받침이 있습니다. 이 게임에서는 교과서에서 배운 <strong>'풀어쓰기'</strong>를 사용합니다. 
+        <br/><i>예를 들어, '분식'은 'ㅂㅜㄴㅅㅣㄱ'으로 입력합니다.</i></p>
+        <hr>
+        <p>자음과 모음을 정확히 맞혔을 경우 <strong><mark style="background-color:lightgreen">'초록색'</mark></strong>으로 표시됩니다.
+        <br/><i>예를 들어, 정답이 '알콩'인데 '달콩'이라고 입력했다면, 'ㄷ<mark style="background-color:lightgreen">ㅏㄹㅋㅗㅇ</mark>'으로 표시됩니다.</i></p>
+        <hr>
+        <p>자음을 정확히 맞히지 못했지만 정답과 <strong>조음 위치</strong>가 일치할 경우, 해당 자음은 <strong><mark style="background-color:yellow">'노란색'</mark></strong>으로 표시됩니다.
+        <br/><i>예를 들어, 정답이 'ㅁ'인데 'ㅂ'이라고 입력했다면, '<mark style="background-color:yellow">ㅂ</mark>'으로 표시됩니다. ㅁ과 ㅂ는 모두 입술소리이기 때문입니다.</i></p>
+        <p>모음을 정확히 맞히지 못했지만 정답과 <strong>'기본자/초출자/재출자'</strong>라는 점이 일치할 경우, 해당 모음은 <strong><mark style="background-color:yellow">'노란색'</mark></strong>으로 표시됩니다.
+        <br/><i>예를 들어, 정답이 'ㅑ'인데 'ㅛ'이라고 입력했다면, '<mark style="background-color:yellow">ㅛ</mark>'으로 표시됩니다. ㅑ과 ㅛ는 모두 재출자이기 때문입니다.</i></p>
+
         
         <style>
             input {
@@ -26,7 +35,7 @@
         </style>
 
     
-
+    <p style="font-size:1px">초성1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;중성1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;종성1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;초성2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;중성2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;종성2</p>
     <input class="input">
     <input class="input">
     <input class="input">
